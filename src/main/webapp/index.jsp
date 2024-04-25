@@ -7,26 +7,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="">
-<title>Working App</title>
+<title>E-Commerce Home</title>
 <%@include file="common_files/common.jsp"%>
 <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
 	<%@include file="common_files/header.jsp"%>
-	
+
 	<!-- Slider -->
 
 	<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="5000">
-				<img src="images/1.jpg" class="d-block w-100" alt="slider1" height="450px">
+				<img src="#" class="d-block w-100" alt="slider1"
+					height="450px">
 			</div>
 			<div class="carousel-item" data-bs-interval="5000">
-				<img src="images/1.jpg" class="d-block w-100" alt="slider2" height="450px">
+				<img src="#" class="d-block w-100" alt="slider2"
+					height="450px">
 			</div>
 			<div class="carousel-item">
-				<img src="images/1.jpg" class="d-block w-100" alt="slider3"	height="450px">
+				<img src="#" class="d-block w-100" alt="slider3"
+					height="450px">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button"
@@ -53,7 +56,7 @@
   					<div class="card-body text-center">	
   				  		 <img src="images/Samsung Galaxy S24 plus.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
  				 		 <h5 class="card-title">Samsung Galaxy S24+</h5>
- 				 		 <p class="card-text">(12GB RAM | 256GB ROM)</p>
+ 				 		 <p class="card-text">(12GB RAM|256GB ROM)</p>
   				   		 <p class="card-price">Rs.266,990.00</p>
     			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
   					</div>
@@ -64,7 +67,7 @@
   					<div class="card-body text-center">	
   				  		 <img src="images/Samsung Galaxy S23.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
  				 		 <h5 class="card-title">Samsung Galaxy S23</h5>
-  				   		 <p class="card-text">(8GB RAM | 128GB ROM)</p>
+  				   		 <p class="card-text">(8GB RAM|128GB ROM)</p>
   				   		 <p class="card-price">Rs.194,990.00</p>
     			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
   					</div>
@@ -132,7 +135,7 @@
 				<div class="card crd-ho">
   					<div class="card-body text-center">	
   				  		 <img src="images/Apple iPhone 15.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
- 				 		 <h5 class="card-title">Apple iPhone 15 </h5>
+ 				 		 <h5 class="card-title">Apple iPhone 15</h5>
   				   		 <p class="card-text">(128GB-DIRECT IMPORT)</p>
   				   		 <p class="card-price">Rs.231,990.00</p>
     			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -143,7 +146,7 @@
 				<div class="card crd-ho">
   					<div class="card-body text-center">	
   				  		 <img src="images/apple-iphone 12.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
- 				 		 <h5 class="card-title">Apple iPhone 12 </h5>
+ 				 		 <h5 class="card-title">Apple iPhone 12</h5>
   				   		 <p class="card-text">(128GB-DIRECT IMPORT)</p>
   				   		 <p class="card-price">Rs.162,990.00</p>
     			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
