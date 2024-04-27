@@ -1,6 +1,6 @@
 package com.entity;
 
-public class user {
+public class User {
 
 	private int id;
 	private String name;
@@ -15,7 +15,7 @@ public class user {
 	
 	
 	
-	public user() {
+	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

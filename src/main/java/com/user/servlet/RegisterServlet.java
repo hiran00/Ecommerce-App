@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import com.DB.DBConnect;
 import com.DAO.UserDAOImpl;
-import com.entity.user;
+import com.entity.User;
 import com.mysql.jdbc.Connection;
 
 
@@ -32,7 +32,7 @@ public class RegisterServlet extends HttpServlet {
 			
 			/* System.out.println(name+""+email+""+tel+""+password+""+check); */
 			
-			user us=new user();
+			User us=new User();
 			us.setName(name);
 			us.setEmail(email);
 			us.setTel(tel);
