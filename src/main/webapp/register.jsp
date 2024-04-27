@@ -24,11 +24,11 @@
 					
 					
 					<c:if test="${not empty succMsg }">
-						<p class="text-center text-success">${succMsg}</p>
+						<h6 class="text-center text-success">${succMsg}</h6>
 						<c:remove var="succMsg" scope="session" />
 					</c:if>
 					<c:if test="${not empty failedMsg }">
-						<p class="text-center text-danger">${failedMsg}</p>
+						<h6 class="text-center text-danger">${failedMsg}</h6>
 						<c:remove var="failedMsg" scope="session" />
 					</c:if>	
 					
