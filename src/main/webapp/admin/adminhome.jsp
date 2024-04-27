@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <%@include file="admincommon.jsp"%>
 <title>Admin home</title>
 
@@ -66,8 +67,7 @@ a :hover{
 						</div>					
 					</div>
 				</a>
-				</div>
-				
+				</div>	
 				<div class="col-md-3">
 				<a href="#">
 					<div class="card">
