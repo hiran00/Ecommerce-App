@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.DAO.ProductsDAOImpl" %>
+<%@ page import="com.DAO.UserDAOImpl" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.entity.Products" %>
+<%@ page import="com.entity.User" %>
 <%@ page import="com.DB.DBConnect" %>	
-  
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
  
@@ -13,7 +13,7 @@
 <head>
 <meta charset="UTF-8">
 <%@include file="admincommon.jsp"%>
-<title>Admin: All Products</title>
+<title>Admin: Customers</title>
 </head>
 <body>
 <%@include file="adminheader.jsp"%>
@@ -23,7 +23,7 @@
 		<div class="col mx-auto">
 			<div class="card">
 				<div class="card-body">	
-					<h4 class="text-center mb-4 mt-2">All Products</h4>
+					<h4 class="text-center mb-4 mt-2">Registered Users</h4>
 					
 					
 					<c:if test="${not empty succMsg }">
@@ -36,36 +36,31 @@
 					</c:if>
 					
 					
-					<table class="table">
+					<table class="table table-striped">
 					  <thead class="table-dark">
 					    <tr>
 					      <th scope="col">ID</th>
-						  <th scope="col">Image</th>
 					      <th scope="col">Name</th>
-					      <th scope="col">Details</th>
-					      <th scope="col">Price</th>
-					      <th scope="col">Category</th>
+					      <th scope="col">E-mail</th>
+					      <th scope="col">Phone</th>
 					      <th scope="col">Action</th>
 					    </tr>
 					  </thead>
 					  <tbody>
 					  
 					  <%
-					  ProductsDAOImpl dao = new ProductsDAOImpl(DBConnect.getConn());
-					  List<Products> list =dao.getAllProduct();
-					  for (Products p:list) {
+					  UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+					  List<User> list =dao.getAllUsers();
+					  for (User u:list) {
 					  %> 
 					  
 					  <tr>
-					      <td><%=p.getpId() %></td>
-					      <td><img src="../images/<%=p.getPimage()%>" style="width: 50px; height: 50px;"></td>
-					      <td><%=p.getPname() %></td>
-					      <td><%=p.getPdetails() %></td>
-					      <td><%=p.getPrice() %></td>
-					      <td><%=p.getPcategory() %></td>
+					      <td><%=u.getId() %></td>
+					      <td><%=u.getName() %></td>
+					      <td><%=u.getEmail() %></td>
+					      <td><%=u.getTel() %></td>
 					      <td>
-						  <a href="edit_products.jsp?id=<%=p.getpId()%>" class="btn btn-sm btn-primary">Edit</a>
-						  <a href="../delete?id=<%=p.getpId()%>" class="btn btn-sm btn-danger">Delete</a>
+						  <a href="../userdelete?id=<%=u.getId()%>" class="btn btn-sm btn-danger">Delete</a>
 						  </td>
 					   </tr>
 					  <%  

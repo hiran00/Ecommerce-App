@@ -1,11 +1,18 @@
 package com.DAO;
 
+import java.util.List;
 import com.entity.Products;
 
 public interface ProductsDAO {
 
 	public boolean addProducts(Products p);
 	
+	public List<Products> getAllProduct();
 	
+	public Products getProductsbyId(int id);
+	
+	public boolean updateEditedProducts(Products p);
+	
+	public boolean deleteProducts(int id);
 	
 }
