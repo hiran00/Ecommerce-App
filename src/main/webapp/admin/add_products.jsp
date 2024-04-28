@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +19,21 @@
 			<div class="card">
 				<div class="card-body">	
 					<h4 class="text-center mt-3">Add Products</h4>
+					
+					
+					
+					<c:if test="${not empty succMsg }">
+						<h6 class="text-center text-success">${succMsg}</h6>
+						<c:remove var="succMsg" scope="session" />
+					</c:if>
+					<c:if test="${not empty failedMsg }">
+						<h6 class="text-center text-danger">${failedMsg}</h6>
+						<c:remove var="failedMsg" scope="session" />
+					</c:if>	
+					
+					
 							
-					<form class="p-4" action="#" method="post">
+					<form class="p-4" action="../add_products" method="post" enctype="multipart/form-data">
 					
 						<div class="form-group py-2">
 						  <label for="pname" class="form-label">Product Name</label>
@@ -36,7 +52,7 @@
 					  					  	
 					  	<div class="form-group py-3">
 					       <label for="pcategory" >Product Category</label>
-					       <select class="form-select text-center mt-2" aria-label="Default select example">
+					       <select class="form-select text-center mt-2" name="pcategory"  aria-label="Default select example">
 							  <option selected >--Select a Category--</option>
 							  <option value="apple">Apple Phones</option>
 							  <option value="samsung">Samsung Phones</option>

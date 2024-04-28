@@ -73,7 +73,7 @@ a :hover{
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fa-solid fa-user-group fa-3x p-3" style="color:#FFD43B;"></i>
-							<h4>Registered Users</h4>
+							<h4>Customers</h4>
 							<p> Details of Registered Users</p>
 						</div>					
 					</div>

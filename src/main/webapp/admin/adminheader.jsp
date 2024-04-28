@@ -24,7 +24,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="adminhome.jsp">Admin Home</a>
+          <a class="nav-link active" aria-current="page" href="adminhome.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="all_products.jsp">All Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="add_products.jsp">Add Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orders.jsp">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customers</a>
         </li>
       </ul>       
             

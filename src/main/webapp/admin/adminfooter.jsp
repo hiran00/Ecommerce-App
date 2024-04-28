@@ -15,7 +15,7 @@
                         <li><a href="orders.jsp" class="link">Orders</a></li>
                         <li><a href="all_products.jsp" class="link">All Products</a></li>
                         <li><a href="add_products.jsp" class="link">Add Products</a></li>
-                        <li><a href="users.jsp" class="link">Registered Users</a></li>
+                        <li><a href="customers.jsp" class="link">Customers</a></li>
 
                     </ul>
                 </div>
