@@ -15,4 +15,9 @@ public interface ProductsDAO {
 	
 	public boolean deleteProducts(int id);
 	
+	public List<Products> getSamsung();
+	
+	public List<Products> getApple();
+	
+	public List<Products> getAccessories();
 }

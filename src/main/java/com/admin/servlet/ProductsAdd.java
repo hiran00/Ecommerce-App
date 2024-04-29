@@ -48,7 +48,7 @@ public class ProductsAdd extends HttpServlet{
 					part.write(path + File.separator + fileName);
 			  
 			  
-					session.setAttribute("succMsg", "Book Added Successfully!");
+					session.setAttribute("succMsg", "Product Added Successfully!");
 					resp.sendRedirect("admin/add_products.jsp");
 			  
 			  } else {
