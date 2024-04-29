@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +27,11 @@ a :hover{
 </head>
 <body>
 <%@include file="adminheader.jsp"%>
+
+	<c:if test="${empty userobj}">
+		<c:redirect url="../login.jsp"/>
+	</c:if>
+
 
 <div class="col mx-auto  pt-5">
 <div class="card-body">

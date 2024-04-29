@@ -13,6 +13,10 @@
 <body>
 <%@include file="adminheader.jsp"%>
 
+	<c:if test="${empty userobj}">
+		<c:redirect url="../login.jsp"/>
+	</c:if>
+
 <div class="container p-5">
 	<div class="row">
 		<div class="col-md-6 mx-auto">

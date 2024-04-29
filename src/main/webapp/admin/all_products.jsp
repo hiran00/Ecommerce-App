@@ -18,6 +18,10 @@
 <body>
 <%@include file="adminheader.jsp"%>
 
+	<c:if test="${empty userobj}">		
+		<c:redirect url="../login.jsp"/>
+	</c:if>
+
 <div class="container py-5">
 	<div class="row">
 		<div class="col mx-auto">
@@ -64,8 +68,8 @@
 					      <td><%=p.getPrice() %></td>
 					      <td><%=p.getPcategory() %></td>
 					      <td>
-						  <a href="edit_products.jsp?id=<%=p.getpId()%>" class="btn btn-sm btn-primary">Edit</a>
-						  <a href="../delete?id=<%=p.getpId()%>" class="btn btn-sm btn-danger">Delete</a>
+						  <a href="edit_products.jsp?id=<%=p.getpId()%>" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+						  <a href="../delete?id=<%=p.getpId()%>" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</a>
 						  </td>
 					   </tr>
 					  <%  

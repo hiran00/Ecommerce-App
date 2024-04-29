@@ -14,8 +14,8 @@
 		</div>	
 		
 		<div class="col d flex align-items-center">
-		<a href="login.jsp"><button class="accountbtn"><i class="fa-solid fa-user"></i> Login</button></a>
-		<a href="register.jsp"><button class="accountbtn"><i class="fa-solid fa-right-to-bracket"></i> Register</button></a>
+		<a href="login.jsp"><button class="accountbtn"><i class="fa-solid fa-right-to-bracket fa-sm"></i> Login</button></a>
+		<a href="register.jsp"><button class="accountbtn"><i class="fa-solid fa-user-plus fa-sm"></i> Register</button></a>
 		</div>
 		
 	</div>
@@ -53,7 +53,7 @@
         </li>
       </ul>
       
-      <span class="hotline"><i class="fa-solid fa-phone-volume"></i> Hotline : 011 2345678</span>           
+      <span class="hotline"><i class="fa-solid fa-phone fa-sm"></i> Hotline : 011 2345678</span>           
             
     </div>
   </div>

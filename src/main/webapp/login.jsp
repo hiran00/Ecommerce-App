@@ -27,6 +27,11 @@
 					<c:remove var="failedMsg" scope="session" />
 					</c:if>
 					
+					<c:if test="${not empty succMsg }">
+					<h6 class="text-center text-success">${succMsg}</h6>
+					<c:remove var="succMsg" scope="session" />
+					</c:if>
+					
 									
 					<form class="p-4" action="login" method="post">
 						<div class="form-group">

@@ -18,6 +18,10 @@
 <body>
 <%@include file="adminheader.jsp"%>
 
+	<c:if test="${empty userobj}">
+		<c:redirect url="../login.jsp"/>
+	</c:if>
+
 <div class="container py-5">
 	<div class="row">
 		<div class="col mx-auto">
