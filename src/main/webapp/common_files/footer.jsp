@@ -11,7 +11,7 @@
                 <div class="col-lg-2 ms-auto col-sm-6">
                     <h5 class="mb-3 mb-lg-4 text-white">Most Viewed</h5>
                     <ul>
-                        <li><a href="#" class="link">Accessories</a></li>
+                        <li><a href="all_accessories.jsp" class="link">Accessories</a></li>
                         <li><a href="all_samsung.jsp" class="link">Samsung Phones</a></li>
                         <li><a href="all_apple.jsp" class="link">Apple Phones</a></li>
                         <li><a href="#" class="link">Xiaomi Phones</a></li>

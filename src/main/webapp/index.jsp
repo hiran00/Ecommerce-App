@@ -146,7 +146,7 @@
  		</div>
 	</div>	
 	<div class="text-center mt-5">
-	<a href="#" class="btn btn-success btn-md text-white">View More</a>
+	<a href="all_accessories.jsp" class="btn btn-success btn-md text-white">View More</a>
 	</div>
 </section>
 
