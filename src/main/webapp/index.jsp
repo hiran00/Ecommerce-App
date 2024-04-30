@@ -101,6 +101,14 @@
 			<div class="text-center mt-5">
 				<a href="" class="btn btn-danger btn-md text-white">View More</a>
 			</div>
+<<<<<<< Updated upstream
+=======
+ 		</div>
+	</div>	
+	<div class="text-center mt-5">
+	<a href="all_samsung.jsp" class="btn btn-success btn-md text-white">View More</a>
+	</div>
+>>>>>>> Stashed changes
 			
 			
 <!-- Apple Phones -->

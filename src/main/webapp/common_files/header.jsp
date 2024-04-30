@@ -38,7 +38,7 @@
             Smart Phones
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Samsung Phones</a></li>
+            <li><a class="dropdown-item" href="all_samsung.jsp">Samsung Phones</a></li>
             <li><a class="dropdown-item" href="#">Apple Phones</a></li>
           </ul>
         </li>
