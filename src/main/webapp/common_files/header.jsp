@@ -43,7 +43,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Accessories</a>
+          <a class="nav-link" href="all_accessories.jsp">Accessories</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>

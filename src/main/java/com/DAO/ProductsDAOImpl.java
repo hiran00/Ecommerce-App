@@ -349,10 +349,43 @@ public class ProductsDAOImpl implements ProductsDAO{
 	
 		return list;
 	}
+
+
+	@Override
+	public List<Products> getAllAccessories() {
+		
+		List<Products> list = new ArrayList<Products>();
+		Products p3=null;
+		
+		try {
+			
+			String sql = "select * from products where pcategory=?";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1,"accessories");
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while (rs.next())
+			{
+				p3=new Products();
+				p3.setpId(rs.getInt(1));
+				p3.setPname(rs.getString(2));
+				p3.setPdetails(rs.getString(3));
+				p3.setPrice(rs.getString(4));
+				p3.setPcategory(rs.getString(5));
+				p3.setAvailability(rs.getString(6));
+				p3.setPimage(rs.getString(7));
+				list.add(p3);
+				
+			}
+	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	
 	
-	
-	
+		return list;
+	}
 
 }
 
