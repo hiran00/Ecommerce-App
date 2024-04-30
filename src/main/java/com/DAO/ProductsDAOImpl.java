@@ -279,7 +279,6 @@ public class ProductsDAOImpl implements ProductsDAO{
 	}
 
 
-
 	@Override
 	public List<Products> getAllSamsung() {
 		
@@ -314,6 +313,44 @@ public class ProductsDAOImpl implements ProductsDAO{
 	
 		return list;
 	}
+
+
+	@Override
+	public List<Products> getAllApple() {
+		
+		List<Products> list = new ArrayList<Products>();
+		Products p2=null;
+		
+		try {
+			
+			String sql = "select * from products where pcategory=?";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1,"apple");
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while (rs.next())
+			{
+				p2=new Products();
+				p2.setpId(rs.getInt(1));
+				p2.setPname(rs.getString(2));
+				p2.setPdetails(rs.getString(3));
+				p2.setPrice(rs.getString(4));
+				p2.setPcategory(rs.getString(5));
+				p2.setAvailability(rs.getString(6));
+				p2.setPimage(rs.getString(7));
+				list.add(p2);
+				
+			}
+	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+		return list;
+	}
+	
+	
 	
 	
 
