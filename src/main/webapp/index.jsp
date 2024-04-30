@@ -68,7 +68,11 @@
 	 				 	<p class="card-text"><%=p.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
 	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+
 	    			 	<a href="samsung_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+
+	    			 	<a href="#" class="btn btn-success btn-sm mb-2">View Details</a>
+
   					</div>
 				</div>
 			</div>
@@ -76,11 +80,20 @@
 			}
 			%> 		
 			</div>
+
+
+
+
+
  		</div>
 	</div>	
 	<div class="text-center mt-5">
 	<a href="all_samsung.jsp" class="btn btn-success btn-md text-white">View More</a>
 	</div>
+
+
+
+
 			
 			
 <!-- Apple Phones -->

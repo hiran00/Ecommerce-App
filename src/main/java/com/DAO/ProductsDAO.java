@@ -20,6 +20,7 @@ public interface ProductsDAO {
 	public List<Products> getApple();
 	
 	public List<Products> getAccessories();
-	
+
 	public List<Products> getAllSamsung();
+
 }
