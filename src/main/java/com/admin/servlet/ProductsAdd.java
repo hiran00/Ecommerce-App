@@ -29,11 +29,12 @@ public class ProductsAdd extends HttpServlet{
 			String pdetails = req.getParameter("pdetails"); 
 			String price = req.getParameter("price");
 			String pcategory = req.getParameter("pcategory");
+			String availability = req.getParameter("availability");
 			Part part = req.getPart("pimage");
 			String fileName = part.getSubmittedFileName();
 			
 			
-			Products p = new Products(pname, pdetails, price, pcategory, fileName);
+			Products p = new Products(pname, pdetails, price, pcategory, availability, fileName);
 			
 			ProductsDAOImpl dao = new ProductsDAOImpl(DBConnect.getConn());
 			

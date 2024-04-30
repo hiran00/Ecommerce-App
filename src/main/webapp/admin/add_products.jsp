@@ -62,6 +62,15 @@
 							  <option value="samsung">Samsung Phones</option>
 							  <option value="accessories">Mobile Accessories</option>
 							</select>
+					  	</div>
+					  	
+					  	<div class="form-group py-3">
+					       <label for="availability" >Availability</label>
+					       <select class="form-select text-center mt-2" name="availability"  aria-label="Default select example">
+							  <option selected >--Select Availability--</option>
+							  <option value="instock">In Stock</option>
+							  <option value="outofstock">Out of Stock</option>
+							</select>
 					  	</div>	
 					  	
 					  	<div class="form-group py-3">

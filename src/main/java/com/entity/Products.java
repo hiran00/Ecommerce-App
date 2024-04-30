@@ -7,7 +7,9 @@ public class Products {
 	private String pdetails;
 	private String price;
 	private String pcategory;
+	private String availability;
 	private String pimage;
+	
 	/* private String user_email; */
 	
 	
@@ -16,12 +18,13 @@ public class Products {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Products(String pname, String pdetails, String price, String pcategory, String pimage) {
+	public Products(String pname, String pdetails, String price, String pcategory, String availability, String pimage) {
 		super();
 		this.pname = pname;
 		this.pdetails = pdetails;
 		this.price = price;
 		this.pcategory = pcategory;
+		this.availability = availability;
 		this.pimage = pimage;
 	}
 
@@ -64,6 +67,14 @@ public class Products {
 	public void setPcategory(String pcategory) {
 		this.pcategory = pcategory;
 	}
+	
+	public String getAvailability() {
+		return availability;
+	}
+
+	public void setAvailability(String availability) {
+		this.availability = availability;
+	}
 
 	public String getPimage() {
 		return pimage;
@@ -76,7 +87,7 @@ public class Products {
 	@Override
 	public String toString() {
 		return "Products [pId=" + pId + ", pname=" + pname + ", pdetails=" + pdetails + ", price=" + price
-				+ ", pcategory=" + pcategory + ", pimage=" + pimage + "]";
+				+ ", pcategory=" + pcategory + ", availability=" + availability + " pimage=" + pimage + "]";
 	}
 	
 	

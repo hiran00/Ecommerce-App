@@ -25,13 +25,14 @@ public class ProductsDAOImpl implements ProductsDAO{
 		boolean f=false;
 		try {
 			
-			String sql = "insert into products(pname,pdetails,price,pcategory,pimage) values(?,?,?,?,?)";
+			String sql = "insert into products(pname,pdetails,price,pcategory,availability,pimage) values(?,?,?,?,?,?)";
 			PreparedStatement ps=conn.prepareStatement(sql);
 			ps.setString(1, p.getPname());
 			ps.setString(2, p.getPdetails());
 			ps.setString(3, p.getPrice());
 			ps.setString(4, p.getPcategory());
-			ps.setString(5, p.getPimage());
+			ps.setString(5, p.getAvailability());
+			ps.setString(6, p.getPimage());
 			
 			int i=ps.executeUpdate();
 			
@@ -68,7 +69,8 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p.setPdetails(rs.getString(3));
 				p.setPrice(rs.getString(4));
 				p.setPcategory(rs.getString(5));
-				p.setPimage(rs.getString(6));
+				p.setAvailability(rs.getString(6));
+				p.setPimage(rs.getString(7));
 				list.add(p);
 			}
 			
@@ -99,6 +101,7 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p.setPname(rs.getString(2));
 				p.setPdetails(rs.getString(3));
 				p.setPrice(rs.getString(4));
+				p.setAvailability(rs.getString(5));
 			}
 			
 		} catch (Exception e) {
@@ -114,12 +117,13 @@ public class ProductsDAOImpl implements ProductsDAO{
 		
 		try {
 			
-			String sql = "update products set pname=?,pdetails=?,price=? where pId=?";
+			String sql = "update products set pname=?,pdetails=?,price=?,availability=? where pId=?";
 			PreparedStatement ps=conn.prepareStatement(sql);
 			ps.setString(1, p.getPname());
 			ps.setString(2, p.getPdetails());
 			ps.setString(3, p.getPrice());
-			ps.setInt(4, p.getpId());
+			ps.setString(4, p.getAvailability());
+			ps.setInt(5, p.getpId());
 			
 			int i=ps.executeUpdate();
 			if(i==1)
@@ -184,7 +188,8 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p.setPdetails(rs.getString(3));
 				p.setPrice(rs.getString(4));
 				p.setPcategory(rs.getString(5));
-				p.setPimage(rs.getString(6));
+				p.setAvailability(rs.getString(6));
+				p.setPimage(rs.getString(7));
 				list.add(p);
 				i++;
 			}
@@ -220,7 +225,8 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p2.setPdetails(rs.getString(3));
 				p2.setPrice(rs.getString(4));
 				p2.setPcategory(rs.getString(5));
-				p2.setPimage(rs.getString(6));
+				p2.setAvailability(rs.getString(6));
+				p2.setPimage(rs.getString(7));
 				list.add(p2);
 				i++;
 			}
@@ -256,7 +262,8 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p3.setPdetails(rs.getString(3));
 				p3.setPrice(rs.getString(4));
 				p3.setPcategory(rs.getString(5));
-				p3.setPimage(rs.getString(6));
+				p3.setAvailability(rs.getString(6));
+				p3.setPimage(rs.getString(7));
 				list.add(p3);
 				i++;
 			}

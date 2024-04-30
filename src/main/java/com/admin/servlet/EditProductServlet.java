@@ -24,12 +24,14 @@ public class EditProductServlet extends HttpServlet {
 			String pname = req.getParameter("pname");
 			String pdetails = req.getParameter("pdetails"); 
 			String price = req.getParameter("price");
+			String availability = req.getParameter("availability");
 			
 			Products p=new Products();
 			p.setpId(id);
 			p.setPname(pname);
 			p.setPdetails(pdetails);
 			p.setPrice(price);
+			p.setAvailability(availability);
 			
 			ProductsDAOImpl dao=new ProductsDAOImpl(DBConnect.getConn());
 			boolean f=dao.updateEditedProducts(p);

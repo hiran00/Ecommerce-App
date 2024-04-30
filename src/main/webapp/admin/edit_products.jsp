@@ -50,6 +50,22 @@
 						<div class="form-group py-2">
 					       <label for="price" class="form-label">Product Price</label>
 					       <input type="number" class="form-control" id="InputPhonenumber" name="price" value="<%=p.getPrice() %>">
+					  	</div>
+					  	
+					  	<div class="form-group py-3">
+					       <label for="availability" >Availability</label>
+					       <select class="form-select text-center mt-2" name="availability"  aria-label="Default select example">
+							
+							<% if ("instock".equals(p.getAvailability())){%>
+								<option value="instock">In Stock</option>
+								<option value="outofstock">Out of Stock</option>
+							<%
+							} else {%>
+								<option value="instock">In Stock</option>
+								<option value="outofstock">Out of Stock</option>
+							<%}
+							%>
+						</select>
 					  	</div>		
 					  			
 						<div class="row align-items-center mt-3 p-2">
