@@ -25,18 +25,18 @@
 			<%
 			ProductsDAOImpl dao = new ProductsDAOImpl(DBConnect.getConn());
 			List<Products> list =dao.getAllApple();
-			for (Products p2 : list) {
+			for (Products p : list) {
 			%> 
 			
 			<div class=col-md-3>
 				<div class="card crd-ho mb-4">
   					<div class="card-body text-center">	
-	  				  	<img src="images/<%=p2.getPimage()%>" class="card-img" alt="..." Style="width: 200px; height:200px">
-	 				 	<h6 class="card-title mt-2"><%=p2.getPname()%></h6>
-	 				 	<p class="card-text"><%=p2.getPdetails()%></p>
-	  				   	<p class="card-price">Rs. <%=p2.getPrice()%></p>
+	  				  	<img src="images/<%=p.getPimage()%>" class="card-img" alt="..." Style="width: 200px; height:200px">
+	 				 	<h6 class="card-title mt-2"><%=p.getPname()%></h6>
+	 				 	<p class="card-text"><%=p.getPdetails()%></p>
+	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
 	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
-	    			 	<a href="apple_details.jsp?pid=<%=p2.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+	    			 	<a href="apple_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
   					</div>
 				</div>
 			</div>

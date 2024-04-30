@@ -135,7 +135,7 @@
 	 				 	<p class="card-text"><%=p3.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p3.getPrice()%></p>
 	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
-	    			 	<a href="#" class="btn btn-success btn-sm mb-2">View Details</a>
+	    			 	<a href="accessories_details.jsp?pid=<%=p3.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
   					</div>
 				</div>
 			</div>

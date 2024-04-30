@@ -36,7 +36,7 @@
 	 				 	<p class="card-text"><%=p.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
 	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
-	    			 	<a href="#" class="btn btn-success btn-sm mb-2">View Details</a>
+	    			 	<a href="accessories_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
   					</div>
 				</div>
 			</div>
