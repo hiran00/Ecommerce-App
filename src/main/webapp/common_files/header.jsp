@@ -14,8 +14,8 @@
 		</div>	
 		
 		<div class="col d flex align-items-center">
-		<a href="#"><button class="accountbtn"><i class="fa-solid fa-user"></i> Login</button></a>
-		<a href="#"><button class="accountbtn"><i class="fa-solid fa-right-to-bracket"></i> Register</button></a>
+		<a href="login.jsp"><button class="accountbtn"><i class="fa-solid fa-right-to-bracket fa-sm"></i> Login</button></a>
+		<a href="register.jsp"><button class="accountbtn"><i class="fa-solid fa-user-plus fa-sm"></i> Register</button></a>
 		</div>
 		
 	</div>
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,7 +52,8 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <span class="hotline"><i class="fa-solid fa-phone-volume"></i> Hotline : 011 2345678</span>           
+      
+      <span class="hotline"><i class="fa-solid fa-phone fa-sm"></i> Hotline : 011 2345678</span>           
             
     </div>
   </div>

@@ -101,7 +101,9 @@ public class ProductsDAOImpl implements ProductsDAO{
 				p.setPname(rs.getString(2));
 				p.setPdetails(rs.getString(3));
 				p.setPrice(rs.getString(4));
-				p.setAvailability(rs.getString(5));
+				p.setPcategory(rs.getString(5));
+				p.setAvailability(rs.getString(6));
+				p.setPimage(rs.getString(7));
 			}
 			
 		} catch (Exception e) {
