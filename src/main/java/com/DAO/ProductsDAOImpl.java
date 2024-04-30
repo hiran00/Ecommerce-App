@@ -277,6 +277,7 @@ public class ProductsDAOImpl implements ProductsDAO{
 	}
 
 
+
 	@Override
 	public List<Products> getAllSamsung() {
 		
