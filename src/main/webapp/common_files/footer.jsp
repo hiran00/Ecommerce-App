@@ -13,7 +13,7 @@
                     <ul>
                         <li><a href="#" class="link">Accessories</a></li>
                         <li><a href="all_samsung.jsp" class="link">Samsung Phones</a></li>
-                        <li><a href="#" class="link">Apple Phones</a></li>
+                        <li><a href="all_apple.jsp" class="link">Apple Phones</a></li>
                         <li><a href="#" class="link">Xiaomi Phones</a></li>
 
                     </ul>
