@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Product Details</title>
+<title>Accessories Details</title>
 <%@include file="common_files/common.jsp"%>
 </head>
 <body>
@@ -31,7 +31,7 @@
 				<div class="col-md-6 pt-5">
 				<h2><%=p.getPname()%></h2>
 				<p>
-				Brand: <a href="all_apple.jsp" style="text-decoration: none; " >Apple</a><br>
+				Brand: <a href="all_accessories.jsp" style="text-decoration: none; " >Accessories</a><br>
 				Specifications : <%=p.getPdetails()%>
 				</p>
 				
@@ -46,7 +46,8 @@
 				<h3>Rs.<%=p.getPrice()%></h3><br>
 				
 				<h6>WARRANTY :</h6>
-				<p>01 YEAR APPLECARE WARRANTY / DIRECT IMPORT / BRAND NEW / SEALED PACK / ORIGINAL / NON TRCSL APPROVED.
+				<p>06 MONTHS WARRANTY / DIRECT IMPORT / BRAND NEW / ORIGINAL<br>
+				(Warranty claims are not applicable for physical damages)
 				<br><br> 
 				
 				<p>
@@ -67,7 +68,7 @@
 			<div class="row">		
 			<%
 			ProductsDAOImpl dao2 = new ProductsDAOImpl(DBConnect.getConn());
-			List<Products> list2 =dao2.getApple();
+			List<Products> list2 =dao2.getAccessories();
 			for (Products p2 : list2) {
 			%> 
 			<div class=col-md-3>
@@ -78,7 +79,7 @@
 	 				 	<p class="card-text"><%=p2.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p2.getPrice()%></p>
 	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
-	    			 	<a href="apple_details.jsp?pid=<%=p2.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+	    			 	<a href="accessories_details.jsp?pid=<%=p2.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
   					</div>
 				</div>
 			</div>
