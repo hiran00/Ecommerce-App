@@ -21,7 +21,7 @@
 		
 		<div class="col d flex align-items-center">
 		<a data-bs-toggle="modal" data-bs-target="#exampleModal"><button class="accountbtn">Logout <i class="fa-solid fa-right-to-bracket fa-sm"></i></button></a>
-		<a href="cart.jsp"><button class="accountbtn"><i class="fa-solid fa-cart-shopping fa-xs"></i> Cart</button></a>
+		<a href="cart_and_checkout.jsp"><button class="accountbtn"><i class="fa-solid fa-cart-shopping fa-xs"></i> Cart</button></a>
 		</div>
 		
 		</c:if>
