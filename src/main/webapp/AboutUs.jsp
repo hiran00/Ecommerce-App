@@ -222,7 +222,7 @@
                 </div>
             
                 <div class="team-member">
-                    <img src="IMG\Gen.png" alt="Team Member 2">
+                    <img src="images\Gen.png" alt="Team Member 2">
                         <div>
                             <h3>Jane Smith</h3>
                             <p>CTO & Co-Founder</p>
