@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col d-flex align-items-center">
 			<a class="navbar-brand" href="#">
-                  <img src="images/Vyxo Website Logo tp.png" alt="website logo" Style="width: 60px; height:20px">
+                  <img src="#" alt="website logo" Style="width: 60px; height:20px">
             </a>
 		</div>	
 		

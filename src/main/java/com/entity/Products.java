@@ -9,10 +9,7 @@ public class Products {
 	private String pcategory;
 	private String availability;
 	private String pimage;
-	
-	/* private String user_email; */
-	
-	
+
 	public Products() {
 		super();
 		// TODO Auto-generated constructor stub

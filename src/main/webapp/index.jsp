@@ -1,11 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 	
 <%@ page import="com.DAO.ProductsDAOImpl" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.entity.Products" %>
+
+<%@ page import="com.entity.User" %>
 <%@ page import="com.DB.DBConnect" %>	
-	
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +25,11 @@
 
 </head>
 <body>
+
+	<%
+	User u=(User)session.getAttribute("userobj");
+	%>	
+
 	<%@include file="common_files/header.jsp"%>
 	
 	<!-- Slider -->
@@ -51,6 +61,66 @@
 <!-- Samsung Phones -->
 
 <section id="products">
+
+ <div class="sproducts">
+  <div class="container">
+	<h2 class="text-center">Samsung Phones</h2>
+		<div class="row">
+			<div class=col-md-3>
+				<div class="card crd-ho">
+  					<div class="card-body text-center">	
+
+  				  		 <img src="images/Samsung Galaxy S24 plus.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
+ 				 		 <h5 class="card-title">Samsung Galaxy S24+</h5>
+ 				 		 <p class="card-text">((12GB RAM|256GB ROM))</p>
+  				   		 <p class="card-price">Rs.266,990.00</p>
+    			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
+
+	  				  	<img src="images/<%=p.getPimage()%>" class="card-img" alt="..." Style="width: 200px; height:200px">
+	 				 	<h6 class="card-title mt-2"><%=p.getPname()%></h6>
+	 				 	<p class="card-text"><%=p.getPdetails()%></p>
+	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
+	  				   	
+	  				   	<%
+	  				   	if (u == null) {
+	  				   	%>
+	  				   	<a href="login.jsp" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	  				   	<%
+	  				   	} else {
+	  				   	%>
+	    			 	<a href="cart?pid=<%=p.getpId()%>&&uid=<%=u.getId()%>" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	    			 	<% 
+	  				   	}
+	    			 	%>
+	    			 	
+			 	<a href="samsung_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+
+  					</div>
+				</div>
+			</div>
+			<div class=col-md-3>
+				<div class="card crd-ho">
+  					<div class="card-body text-center">	
+  				  		 <img src="images/Samsung Galaxy S23.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
+ 				 		 <h5 class="card-title">Samsung Galaxy S23</h5>
+  				   		 <p class="card-text">((8GB RAM|128GB ROM))</p>
+  				   		 <p class="card-price">Rs.194,990.00</p>
+    			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
+  					</div>
+				</div>
+			</div>
+			<div class=col-md-3>
+				<div class="card crd-ho">
+  					<div class="card-body text-center">	
+  				  		 <img src="images/Samsung Galaxy S22 5G.jpg" class="card-img" alt="..." Style="width: 200px; height:200px">
+ 				 		 <h5 class="card-title">Samsung Galaxy S22 5G </h5>
+  				   		 <p class="card-text">(8GB RAM | 256GB ROM)</p>
+  				   		 <p class="card-price">Rs.189,990.00</p>
+    			 		 <a href="#" class="btn btn-primary">Add to Cart</a>
+  					</div>
+				</div>
+			</div>
+
 	<div class="sproducts">
   		<div class="container">
 			<h2 class="text-center">SAMSUNG PHONES</h2>
@@ -60,6 +130,7 @@
 			List<Products> list =dao.getSamsung();
 			for (Products p : list) {
 			%> 
+
 			<div class=col-md-3>
 				<div class="card crd-ho">
   					<div class="card-body text-center">	
@@ -101,8 +172,22 @@
 	 				 	<h6 class="card-title mt-2"><%=p2.getPname()%></h6>
 	 				 	<p class="card-text"><%=p2.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p2.getPrice()%></p>
-	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+
+	  				   		
+	    			 	<%
+	  				   	if (u == null) {
+	  				   	%>
+	  				   	<a href="login.jsp" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	  				   	<%
+	  				   	} else {
+	  				   	%>
+	    			 	<a href="cart?pid=<%=p2.getpId()%>&&uid=<%=u.getId()%>" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	    			 	<% 
+	  				   	}
+	    			 	%>
+				 	
 	    			 	<a href="apple_details.jsp?pid=<%=p2.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+
   					</div>
 				</div>
 			</div>
@@ -134,8 +219,21 @@
 	 				 	<h6 class="card-title mt-2"><%=p3.getPname()%></h6>
 	 				 	<p class="card-text"><%=p3.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p3.getPrice()%></p>
-	    			 	<a href="#" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
-	    			 	<a href="accessories_details.jsp?pid=<%=p3.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+
+	    			 	<%
+	  				   	if (u == null) {
+	  				   	%>
+	  				   	<a href="login.jsp" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	  				   	<%
+	  				   	} else {
+	  				   	%>
+	    			 	<a href="cart?pid=<%=p3.getpId()%>&&uid=<%=u.getId()%>" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	    			 	<% 
+	  				   	}
+	    			 	%>
+	    			 	
+				 	<a href="accessories_details.jsp?pid=<%=p3.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
+
   					</div>
 				</div>
 			</div>
