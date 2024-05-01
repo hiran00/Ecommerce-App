@@ -12,4 +12,6 @@ public interface CartDAO {
 	
 	public boolean deleteProduct(int pid, int uid);
 	
+	
+	
 }
