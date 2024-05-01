@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
 
@@ -9,12 +8,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.entity.Products" %>
 <%@ page import="com.entity.User" %>
-
-    
-<%@ page import="com.DAO.ProductsDAOImpl" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.entity.Products" %>
-
 <%@ page import="com.DB.DBConnect" %>
     
 <!DOCTYPE html>
@@ -22,7 +15,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Samsung Phones</title>
-
 
 <link rel="stylesheet" href="css/toast.css">
 <%@include file="common_files/common.jsp"%>
@@ -50,11 +42,6 @@ User u=(User)session.getAttribute("userobj");
 <c:remove var="addCart" scope="session"/>
 </c:if>
 
-
-<%@include file="common_files/common.jsp"%>
-</head>
-<body>
-
 <%@include file="common_files/header.jsp"%>
 
 <div class="container py-2">
@@ -74,7 +61,8 @@ User u=(User)session.getAttribute("userobj");
 	  				  	<img src="images/<%=p.getPimage()%>" class="card-img" alt="..." Style="width: 200px; height:200px">
 	 				 	<h6 class="card-title mt-2"><%=p.getPname()%></h6>
 	 				 	<p class="card-text"><%=p.getPdetails()%></p>
-	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>			   	
+	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
+	  				   	
 				   	
 	    			 	<%
 	  				   	if (u == null) {
@@ -89,7 +77,6 @@ User u=(User)session.getAttribute("userobj");
 	    			 	%>
 	    			 	
 	    	 	<a href="samsung_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
-
   					</div>
 				</div>
 			</div>

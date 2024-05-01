@@ -9,6 +9,7 @@ public class Products {
 	private String pcategory;
 	private String availability;
 	private String pimage;
+	
 
 	public Products() {
 		super();
@@ -56,7 +57,7 @@ public class Products {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-
+	
 	public String getPcategory() {
 		return pcategory;
 	}
