@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
+
 
 <div class="container-fluid p-3">
 	<div class="row">
@@ -13,12 +16,46 @@
        		</form>
 		</div>	
 		
+		
+		<c:if test="${not empty userobj}">
+		
+		<div class="col d flex align-items-center">
+		<a data-bs-toggle="modal" data-bs-target="#exampleModal"><button class="accountbtn">Logout <i class="fa-solid fa-right-to-bracket fa-sm"></i></button></a>
+		<a href="cart.jsp"><button class="accountbtn"><i class="fa-solid fa-cart-shopping fa-xs"></i> Cart</button></a>
+		</div>
+		
+		</c:if>
+		
+		<c:if test="${empty userobj}">
+		
 		<div class="col d flex align-items-center">
 		<a href="login.jsp"><button class="accountbtn"><i class="fa-solid fa-right-to-bracket fa-sm"></i> Login</button></a>
 		<a href="register.jsp"><button class="accountbtn"><i class="fa-solid fa-user-plus fa-sm"></i> Register</button></a>
 		</div>
-		
+		</c:if>
 	</div>
+</div>
+
+<!-- Logout Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<div class="modal-header">
+        	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      	</div>
+      <div class="modal-body">
+      	<div class="text-center mb-3">     			
+      			<h5>Confirm Logout</h5>
+      			<p>Are you sure you want to logout ?     			
+      		  <div>
+        		<a href="logout" type="button" class="btn btn-primary">Yes, Logout</a>
+        		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>	
+     		  </div>
+      	</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Navbar -->
