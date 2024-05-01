@@ -33,7 +33,7 @@
 </c:if>
 
 <c:if test="${not empty failedMsg }">
-	<div class="alert alert-danger" role="alert">${failedMsg }</div>
+	<div class="alert alert-danger text-center" role="alert">${failedMsg }</div>
 	<c:remove var="failedMsg" scope="session"/>
 </c:if>
 
@@ -93,52 +93,55 @@
 				<div class="card">
 					<div class="card-body">
 					<h3 class="text-center fw-bold mb-4">BILLING DETAILS</h3>
-						<form class="row g-3">
+						<form class="row g-3" action="order" method="post">
+						
+						<input type="hidden" value="${userobj.id}" name="id">
+						
 						  <div class="col-md-6">
 						    <label for="inputEmail4" class="form-label">Name</label>
-						    <input type="text" class="form-control" id="inputEmail4" value="<%=u.getName()%>" readonly="readonly">
+						    <input type="text" name="uname" class="form-control" id="inputEmail4" value="<%=u.getName()%>" readonly="readonly">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputPassword4" class="form-label">Email</label>
-						    <input type="email" class="form-control" id="inputPassword4" value="<%=u.getEmail()%>" readonly="readonly">
+						    <input type="email" name="email" class="form-control" id="inputPassword4" value="<%=u.getEmail()%>" readonly="readonly">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputEmail4" class="form-label">Phone Number</label>
-						    <input type="number" class="form-control" id="inputEmail4" value="<%=u.getTel()%>" readonly="readonly">
+						    <input type="number" name="tel" class="form-control" id="inputEmail4" value="<%=u.getTel()%>" readonly="readonly">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputPassword4" class="form-label">Address</label>
-						    <input type="text" class="form-control" id="inputPassword4">
+						    <input type="text" name="address" class="form-control" id="inputPassword4">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputEmail4" class="form-label">Landmark</label>
-						    <input type="text" class="form-control" id="inputEmail4">
+						    <input type="text" name="landmark" class="form-control" id="inputEmail4">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputPassword4" class="form-label">City</label>
-						    <input type="text" class="form-control" id="inputPassword4">
+						    <input type="text" name="city" class="form-control" id="inputPassword4">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputEmail4" class="form-label">State</label>
-						    <input type="text" class="form-control" id="inputEmail4">
+						    <input type="text" name="state" class="form-control" id="inputEmail4">
 						  </div>
 						  
 						  <div class="col-md-6">
 						    <label for="inputPassword4" class="form-label">Pin Code</label>
-						    <input type="text" class="form-control" id="inputPassword4">
+						    <input type="text" name="pincode" class="form-control" id="inputPassword4">
 						  </div>
 						  
 						  <div class="form-group">
 						    <label for="inputState" class="form-label">Payment Method</label>
-						    <select class="form-select">
-						      <option selected>--- Choose ---</option>
-						      <option>Cash On Delivery</option>
+						    <select class="form-select" name="payment">
+						      <option value="noselect">--- Choose ---</option>
+						      <option value="COD">Cash On Delivery</option>
 						    </select>
 						  </div>
 						  
