@@ -4,6 +4,7 @@
 <%@ page import="com.DAO.ProductsDAOImpl" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.entity.Products" %>
+
 <%@ page import="com.entity.User" %>
 <%@ page import="com.DB.DBConnect" %>
     
@@ -41,6 +42,7 @@ User u=(User)session.getAttribute("userobj");
 	 				 	<h6 class="card-title mt-2"><%=p.getPname()%></h6>
 	 				 	<p class="card-text"><%=p.getPdetails()%></p>
 	  				   	<p class="card-price">Rs. <%=p.getPrice()%></p>
+
 	  				   		
 	    			 	<%
 	  				   	if (u == null) {
@@ -54,6 +56,7 @@ User u=(User)session.getAttribute("userobj");
 	  				   	}
 	    			 	%>
 	    			 			 	
+
 	    			 	<a href="apple_details.jsp?pid=<%=p.getpId() %>" class="btn btn-success btn-sm mb-2">View Details</a>
   					</div>
 				</div>

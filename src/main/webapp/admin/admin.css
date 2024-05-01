@@ -1,0 +1,64 @@
+/* Header */
+.navbar .nav-ite {
+	margin-left: 50px;
+	
+}
+.bg-custom {
+	background-color:#004d40;
+}
+
+.navbar .nav-item .nav-link {
+	color: white;
+}
+
+.dropdown-menu {
+	background-color: #004d40;
+	border: 0px;
+}
+
+.dropdown-item {
+	color: white;
+}
+
+.accountbtn {
+  background-color: white;
+  border: none; 
+  color: black;
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+
+/* Footer */
+footer {
+	background-color: #004d40;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+footer p {
+	color: white;
+	line-height: 0.8;
+}
+
+.footer-top {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); 
+}
