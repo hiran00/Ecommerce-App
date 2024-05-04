@@ -22,7 +22,7 @@
                     <h5 class="mb-3 mb-lg-4 text-white">Quick Links</h5>
                     <ul>
                         <li><a href="#" class="link">Home</a></li>
-                        <li><a href="#" class="link">About Us</a></li>
+                        <li><a href="about.jsp" class="link">About Us</a></li>
                         <li><a href="#" class="link">Contact</a></li>
                         <li><a href="#" class="link">Privacy</a></li>
 
