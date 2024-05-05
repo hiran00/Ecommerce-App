@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
+<%@ page import="com.DAO.ProductOrderImpl" %>
+<%@ page import="com.DAO.ProductOrderDAO" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.entity.Product_Order" %>
+<%@ page import="com.DB.DBConnect" %>    
+    
+    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>    
     
@@ -39,50 +46,27 @@
 					    </tr>
 					  </thead>
 					  <tbody>
-					    <tr>
-					      <th scope="row">1</th>
-					      <td>Hiran Ranasinghe</td>
-					      <td>hiran@gmail.com</td>
-					      <td>No.52, Miriswatta, Gampaha</td>
-					      <td>0771234523</td>
-					      <td>Samsung Galaxy S23</td>
-					      <td>Rs.194,990</td>
-					      <td>COD</td>
+					  
+					  <%
+					  ProductOrderImpl dao=new ProductOrderImpl(DBConnect.getConn());
+					  List<Product_Order> plist = dao.getAllOrder();
+					  for (Product_Order p:plist)
+					  {%>
+					  
+					  <tr>
+					      <th scope="row"><%=p.getOrderId() %></th>
+					      <td><%=p.getName() %></td>
+					      <td><%=p.getEmail() %></td>
+					      <td><%=p.getFullAdd() %></td>
+					      <td><%=p.getTel() %></td>
+					      <td><%=p.getPname() %></td>
+					      <td><%=p.getPrice() %></td>
+					      <td><%=p.getPayment() %></td>
 					    </tr>
-					    
-					    <tr>
-					      <th scope="row">2</th>
-					      <td>Hiran Ranasinghe</td>
-					      <td>hiran@gmail.com</td>
-					      <td>No.52, Miriswatta, Gampaha</td>
-					      <td>0771234523</td>
-					      <td>Samsung Galaxy S23</td>
-					      <td>Rs.194,990</td>
-					      <td>COD</td> 
-					    </tr>
-					    
-					    <tr>
-					      <th scope="row">3</th>
-					      <td>Hiran Ranasinghe</td>
-					      <td>hiran@gmail.com</td>
-					      <td>No.52, Miriswatta, Gampaha</td>
-					      <td>0771234523</td>
-					      <td>Samsung Galaxy S23</td>
-					      <td>Rs.194,990</td>
-					      <td>COD</td>				      
-					    </tr>
-					    
-					    <tr>
-					      <th scope="row">4</th>
-					      <td>Hiran Ranasinghe</td>
-					      <td>hiran@gmail.com</td>
-					      <td>No.52, Miriswatta, Gampaha</td>
-					      <td>0771234523</td>
-					      <td>Samsung Galaxy S23</td>
-					      <td>Rs.194,990</td>
-					      <td>COD</td>					      
-					    </tr>
-					    
+					  
+					  <%} 
+					  %>
+					  			    				    
 					  </tbody>
 					</table>
 				</div>
