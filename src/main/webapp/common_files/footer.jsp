@@ -11,9 +11,9 @@
                 <div class="col-lg-2 ms-auto col-sm-6">
                     <h5 class="mb-3 mb-lg-4 text-white">Most Viewed</h5>
                     <ul>
-                        <li><a href="#" class="link">Accessories</a></li>
-                        <li><a href="#" class="link">Samsung Phones</a></li>
-                        <li><a href="#" class="link">Apple Phones</a></li>
+                        <li><a href="all_accessories.jsp" class="link">Accessories</a></li>
+                        <li><a href="all_samsung.jsp" class="link">Samsung Phones</a></li>
+                        <li><a href="all_apple.jsp" class="link">Apple Phones</a></li>
                         <li><a href="#" class="link">Xiaomi Phones</a></li>
 
                     </ul>
@@ -31,10 +31,10 @@
                 <div class="col-lg-2 col-sm-6">
                     <h5 class="mb-3 mb-lg-4 text-white">Follow Us</h5>
                     <ul>
-                        <li><a href="#" class="link"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#" class="link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#" class="link"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li><a href="#" class="link"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                        <li><a href="#" class="link"><i class="fa-brands fa-twitter fa-sm"></i> Twitter</a></li>
+                        <li><a href="#" class="link"><i class="fa-brands fa-instagram fa-sm"></i> Instagram</a></li>
+                        <li><a href="#" class="link"><i class="fa-brands fa-facebook fa-sm"></i> Facebook</a></li>
+                        <li><a href="#" class="link"><i class="fa-brands fa-tiktok fa-sm"></i> TikTok</a></li>
 
                     </ul>
                 </div>
