@@ -2,7 +2,7 @@
         <div class="container footer-top">
             <div class="row gy-5">
                 <div class="col-lg-5 col-sm-6">
-                    <img src="#" class="mb-3 mb-lg-4" style="width: unset;" alt="logo">
+                    <img src="#" class="mb-3 mb-lg-4" style="width:250px; height:100px" alt="logo">
                     <p class="text">ABC Mobile</p>
                     <p class="text">Phone : 011 2345678</p>
                     <p class="text">E-mail : techwave@gmail.com</p>
@@ -21,9 +21,9 @@
                 <div class="col-lg-2 col-sm-6">
                     <h5 class="mb-3 mb-lg-4 text-white">Quick Links</h5>
                     <ul>
-                        <li><a href="#" class="link">Home</a></li>
+                        <li><a href="index.jsp" class="link">Home</a></li>
                         <li><a href="about.jsp" class="link">About Us</a></li>
-                        <li><a href="#" class="link">Contact</a></li>
+                        <li><a href="contact.jsp" class="link">Contact</a></li>
                         <li><a href="#" class="link">Privacy</a></li>
 
                     </ul>
