@@ -26,4 +26,8 @@ public interface ProductsDAO {
 	public List<Products> getAllApple();
 	
 	public List<Products> getAllAccessories();
+	
+	public List<Products> getProductBySearch(String ch);
+	
+
 }

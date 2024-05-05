@@ -387,6 +387,45 @@ public class ProductsDAOImpl implements ProductsDAO{
 		return list;
 	}
 
+
+
+	@Override
+	public List<Products> getProductBySearch(String ch) {
+		
+		List<Products> list = new ArrayList<Products>();
+		Products p = null;
+		try {
+			
+			String sql = "select * from products where pname like ? or pdetails like ? or pcategory like ? and availability=? ";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1,"%"+ch+"%");
+			ps.setString(2,"%"+ch+"%");
+			ps.setString(3,"%"+ch+"%");
+			ps.setString(4,"instock");
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while (rs.next())
+			{
+				p=new Products();
+				p.setpId(rs.getInt(1));
+				p.setPname(rs.getString(2));
+				p.setPdetails(rs.getString(3));
+				p.setPrice(rs.getString(4));
+				p.setPcategory(rs.getString(5));
+				p.setAvailability(rs.getString(6));
+				p.setPimage(rs.getString(7));
+				list.add(p);
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
+	
 }
 
 
