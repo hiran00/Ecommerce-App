@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col d-flex align-items-center">
 			<a class="navbar-brand" href="#">
-                  <img src="images/Vyxo Website Logo tp.png" alt="website logo" Style="width: 60px; height:20px">
+                  <img src="#" alt="website logo" Style="width: 100px; height:50px">
             </a>
 		</div>
 		<div class="col-6" >
@@ -86,7 +86,7 @@
           <a class="nav-link" href="about.jsp">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.jsp">Contact</a>
         </li>
       </ul>
       

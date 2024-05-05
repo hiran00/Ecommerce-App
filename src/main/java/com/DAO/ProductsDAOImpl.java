@@ -388,7 +388,6 @@ public class ProductsDAOImpl implements ProductsDAO{
 	}
 
 
-
 	@Override
 	public List<Products> getProductBySearch(String ch) {
 		
@@ -425,6 +424,8 @@ public class ProductsDAOImpl implements ProductsDAO{
 		return list;
 	}
 
+	
+	
 	
 }
 
