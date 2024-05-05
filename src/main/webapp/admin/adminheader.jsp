@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col d-flex align-items-center">
 			<a class="navbar-brand" href="#">
-                  <img src="#" alt="website logo" Style="width: 60px; height:20px">
+                  <img src="../images/navlogo.png" alt="website logo" Style="width: 100px; height:50px">
             </a>
 		</div>	
 		

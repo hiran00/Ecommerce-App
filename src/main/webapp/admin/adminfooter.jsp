@@ -2,11 +2,11 @@
         <div class="container footer-top">
             <div class="row gy-4 justify-content-between">
                 <div class="col-auto">
-                    <img src="#" class="mb-3 mb-lg-4" style="width: unset;" alt="logo">
-                    <p class="text">ABC Mobile</p>
+                    <img src="../images/footerlogo.png" class="mb-3 mb-lg-4" style="width:250px; height:100px" alt="logo">
+                    <p class="text">Aura Mobile (Pvt) Ltd</p>
                     <p class="text">Phone : 011 2345678</p>
-                    <p class="text">E-mail : techwave@gmail.com</p>
-                    <p class="text">Address : No.01, Pitipana, Homagama</p>
+                    <p class="text">E-mail : auromobile@gmail.com</p>
+                    <p class="text">Address : No.207/1/1C, High Level Road, Maharagama.</p>
                 </div>
                 
                 <div class="col-auto text-end">
