@@ -6,11 +6,11 @@
 	<div class="row">
 		<div class="col d-flex align-items-center">
 			<a class="navbar-brand" href="#">
-                  <img src="#" alt="website logo" Style="width: 100px; height:50px">
+                  <img src="images/navlogo.png" alt="website logo" Style="width: 100px; height:50px">
             </a>
 		</div>
 		<div class="col-6" >
-			<form class="d-flex" role="search" action="search.jsp" method="post">
+			<form class="d-flex align-items-center" role="search" action="search.jsp" method="post">
         		<input class="form-control me-2" type="search" name="ch" placeholder="Search for products" aria-label="Search">
        			<button class="btn btn-outline-success" type="submit">Search </button>
        		</form>

@@ -4,6 +4,7 @@
 <%@ page import="com.DAO.ProductsDAOImpl" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.entity.Products" %>
+<%@ page import="com.entity.User" %>
 <%@ page import="com.DB.DBConnect" %>
    
 <!DOCTYPE html>
@@ -15,6 +16,11 @@
 </head>
 <body>
 <%@include file="common_files/header.jsp"%>
+
+	<%
+	User u=(User)session.getAttribute("userobj");
+	%>
+
 
 	<%
 	int pid = Integer.parseInt(request.getParameter("pid"));
@@ -54,7 +60,17 @@
 				<i class="fa-solid fa-truck fa-sm"></i> Island wide Delivery: (5-7 Working Days)
 				</p>
 				
-				<a href="#" class="btn btn-primary mb-2">Add to Cart</a>
+						<%
+	  				   	if (u == null) {
+	  				   	%>
+	  				   	<a href="login.jsp" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	  				   	<%
+	  				   	} else {
+	  				   	%>
+	    			 	<a href="cart?pid=<%=p.getpId()%>&&uid=<%=u.getId()%>" class="btn btn-primary btn-sm mb-2">Add to Cart</a>
+	    			 	<% 
+	  				   	}
+	    			 	%>
 				
 				</div>
 			</div>
