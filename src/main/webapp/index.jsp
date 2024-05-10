@@ -14,7 +14,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="">
-<title>Working App</title>
+<title>Home Page</title>
 
 <%@include file="common_files/common.jsp"%>
 <link rel="stylesheet" href="css/index.css">
@@ -39,7 +39,7 @@
 				<img src="images/samsung.jpg" class="d-block w-100" alt="slider2" height="500px">
 			</div>
 			<div class="carousel-item">
-				<img src="images/apple3.jpg" class="d-block w-100" alt="slider3"	height="500px">
+				<img src="images/iPhone14web.jpg" class="d-block w-100" alt="slider3"	height="500px">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button"
