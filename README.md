@@ -1,17 +1,9 @@
 # **Mobile Retail Shop Web Application Documentation**
-## Contribution Chart
 
-* 29131 HMM Ranasinghe -> Home, Admin Panel & Logout
-* 29334 APPIW Gunawardana -> Contact Us Page
-* 28829 AS Kannan -> Cart & Checkout Frontend
-* 29284 KM Liyanage -> Login & Register
-* 29071 PADB Pathiraja -> About Us Page
-* 29006 NWPP Priyadarshana -> Documentation & Database
-* 27985 DBN Ariyathilaka -> Cart & Checkout Backend
-* 28229 UHS Perera -> Category Page & Product Pages
-* 28750 WMVR Wijethunga -> Category Page & Product Pages
-* 28709 RDP Ramanayaka -> Category Page & Product Pages
+## Introduction
 
+The Mobile Retail Shop web application was developed to provide users with a seamless and intuitive shopping experience for purchasing mobile phones online and facilitating seamless transactions between users and the business. 
+There are two main parts of this web application, the admin module and the user module, are each responsible for managing tasks for users and administrators separately.
 
 ## Technologies Used
 
@@ -29,127 +21,52 @@
 ### Database: 
 * MySQL
 
+## Website structure
 
-# Project Objects
+1. User Module :
 
-Our goal with the Mobile Retail Shop web application is to provide users with a seamless and 
-intuitive shopping experience for purchasing mobile phones online. Key objectives of the project 
-include:
+   * Search Functionality - Users can browse through a wide range of mobile phones using search filters such as brand and price range
+ 
+   * Product Listings - Displaying detailed information about mobile phones, including specifications, images, and prices.
 
-* Offering a wide selection of mobile phone products from various manufacturers.
-* Implementing user-friendly browsing, sorting, and filtering functionalities.
-* Providing secure checkout and payment processing capabilities.
-* Optimizing performance, scalability, and reliability of the application.
+   * Purchase Process - Seamless checkout process with secure payment gateways, ensuring a smooth transaction experience for users.
 
+2. Admin Module :
 
-This documentation serves as a historical record of the project's progress, providing insights for 
-future reference and learning. In this document, we outline the structure and content of the project 
-diary for our mobile retail shop web application.
-The purpose of maintaining a project diary within the repository is to:
+   * User Management - Admins can manage user accounts, including registration and profile management.  
 
-1. Document the challenges encountered during development.
-1. Describe the strategies and solutions used to overcome these challenges.
-1. Provide insights for team members and stakeholders on the project's progress & evolution.
-1. Facilitate knowledge sharing and learning from past experiences.
+   * Product Management - Adding, editing, and updating product information such as name, description, price, and availability.
+
+   * Inventory Control -  Tracking and managing stock levels to prevent overselling and ensure timely restocking.
+
+   * Order Management - Monitoring and processing orders, including order fulfillment and delivery tracking.
 
 
-# Project Diary
+## Key features
 
-## Entry 1: Sorting Functionality Implementation
+* Responsive Design - To ensure compatibility across various devices.
 
-* Date: April 15, 2024
-* Description: Implementing sorting functionality for the mobile phones list.
+* Secure Authentication - To safeguard user accounts and sensitive information.
 
-* Challenges:
-  1. Limited understanding of JavaScript sorting algorithms.
-  1.  Ensuring compatibility with different screen sizes and devices.
-  1.  Integrating sorting seamlessly with the existing codebase.
+* Dynamic Content Generation - Utilizing Servlets and JSP to deliver dynamic content tailored to user preferences and actions.
 
-* Approach:
-  1. Researched various JavaScript sorting algorithms (e.g., bubble sort, quicksort).
-  1. Collaborated with the front-end developers to integrate sorting functionality.
+* Database Integration - seamless integration with the database management system, enabling efficient data storage and retrieval.
 
-* Outcome:
-  1. Successfully implemented responsive design to ensure compatibility.
-  1. Integrated sorting functionality seamlessly into the existing codebase.
+* Scalability and Flexibility - The application is inherently scalable and flexible, It has the capability of accommodating future enhancements.
 
-* Reflection:
-  1. Enhanced understanding of JavaScript sorting algorithms.
-  1. Improved skills in responsive design implementation.
-  1. Strengthened collaboration with the front-end developers.
 
-* Next Steps:
-  1. Conduct testing to verify sorting functionality across different devices.
+## Contribution Chart
 
-## Entry 2: Checkout Process Optimization
-
-* Date: April 22, 2024
-* Description: Optimizing the checkout process for smoother user experience.
-
-* Challenges:
-  1. Streamlining the multi-step checkout process.
-  1. Ensuring data security and payment gateway integration.
-  1. Enhancing error handling and validation mechanisms.
-
-* Approach:
-  1. Implemented client-side and server-side validation for data integrity.
-  1. Integrated a secure payment gateway.
-
-* Outcome:
-  1. Reduced checkout steps, leading to a more streamlined process.
-
-* Reflection:
-  1. Learned valuable insights from user feedback and testing.
-  1. Strengthened knowledge of data security best practices.
-  1. Improved understanding of payment gateway integration.
-
-* Next Steps:
-  1. Monitor checkout metrics to assess the impact of optimization efforts.
-
-## Entry 3: Performance Optimization
-
-*  Date: April 28, 2024
-*  Description: Optimizing the performance of the web application for faster load times.
-
-*  Challenges:
-   1. Identifying performance bottlenecks and areas for optimization.
-   1. Balancing functionality with performance enhancements.
-
-*  Approach:
-   1. Conducted performance profiling to identify slow-loading components.
-   1. Implemented lazy loading for images and resources to reduce initial page load time.
-
-*  Outcome:
-   1. Reduced initial page load time by 30% through lazy loading and caching optimizations.
-   1. Improved overall application responsiveness and user experience.
-   1. Maintained functionality while achieving significant performance gains.
-
-*  Reflection:
-   1. Recognized the importance of performance optimization in enhancing user 
-   1. satisfaction.
-   1. Acquired knowledge and skills in various optimization techniques.
-   1. Realized the trade-offs between functionality and performance.
-
-## Entry 4: Integration of User Authentication
-
-* Date: April 30, 2024
-* Description: Integrating user authentication for secure access to account features.
-
-* Challenges:
-  1. Implementing secure password hashing and storage.
-  1. Designing an intuitive and seamless login/signup interface.
-  1. Ensuring compatibility with existing user database schema.
-
-* Approach:
-  1. Designed a unified authentication flow for both login and signup processes.
-
-* Outcome:
-  1. Successfully integrated secure user authentication with hashed passwords.
-  1. Enhanced user account security while providing convenient login options.
-
-* Reflection:
-  1. Gained valuable experience in implementing authentication best practices.
-  1. Recognized the importance of balancing security and user convenience.
+* 29131 HMM Ranasinghe -> Home, Admin Panel & Logout
+* 29334 APPIW Gunawardana -> Contact Us Page & Search Bar
+* 28829 AS Kannan -> Cart & Checkout Frontend
+* 29284 KM Liyanage -> Login & Register
+* 29071 PADB Pathiraja -> About Us Page
+* 29006 NWPP Priyadarshana -> Documentation & Database
+* 27985 DBN Ariyathilaka -> Cart & Checkout Backend
+* 28229 UHS Perera -> Category Page & Product Pages
+* 28750 WMVR Wijethunga -> Category Page & Product Pages
+* 28709 RDP Ramanayaka -> Category Page & Product Pages
 
 
 # Some screenshots of the project
